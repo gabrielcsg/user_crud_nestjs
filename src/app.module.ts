@@ -4,9 +4,8 @@ import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      'mongodb+srv://nestuser:JuPt6n7qLF3WyQHW@clustermain.8reir.gcp.mongodb.net/test',
-    ),
+    // adicione aqui a uri do mongodb.
+    MongooseModule.forRoot('mongodb://localhost/nest'),
     UsersModule,
   ],
   controllers: [],
